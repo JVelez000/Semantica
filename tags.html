@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Etiquetas semánticas</title>
+
+  <!-- Prism CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Terminal macOS style */
+    .terminal-window {
+      background: #2d2d2d;
+      border-radius: 12px;
+      padding: 1em;
+      margin: 1.5em 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      max-width: 700px;
+      font-size: 1rem;
+      overflow-x: auto;
+    }
+    .terminal-header {
+      display: flex;
+      gap: 0.5em;
+      padding-bottom: 0.8em;
+    }
+    .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .red { background: #ff5f56; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #27c93f; }
+
+    /* Ajustar Prism pre para encajar en terminal */
+    pre[class*="language-"] {
+      background: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: visible !important;
+      font-family: 'Fira Code', monospace, monospace;
+      font-size: 1rem;
+      color: #ccc;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <header>
+    <h1>Etiquetas Semánticas HTML5</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>&lt;section&gt;</h2>
+      <p>Define una sección genérica en el documento.</p>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <pre><code class="language-html">&lt;section&gt;
+  &lt;h2&gt;Título&lt;/h2&gt;
+  &lt;p&gt;Contenido&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>&lt;article&gt;</h2>
+      <p>Contenido independiente y autocontenible.</p>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <pre><code class="language-html">&lt;article&gt;
+  &lt;h2&gt;Entrada de blog&lt;/h2&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>&lt;nav&gt;</h2>
+      <p>Define un área de navegación.</p>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <pre><code class="language-html">&lt;nav&gt;
+  &lt;a href="index.html"&gt;Inicio&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>&lt;header&gt;</h2>
+      <p>Encabezado de una página o sección.</p>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <pre><code class="language-html">&lt;header&gt;
+  &lt;h1&gt;Mi sitio&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>&lt;footer&gt;</h2>
+      <p>Pie de página o sección.</p>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+        </div>
+        <pre><code class="language-html">&lt;footer&gt;
+  &copy; 2025
+&lt;/footer&gt;</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Velez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="progress-bar.js"></script>
+
+  <!-- Prism JS -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+
+</body>
+</html>

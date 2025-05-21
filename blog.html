@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-img {
+      float: left;
+      margin-right: 15px;
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <header class="animate__animated animate__fadeInDown">
+    <h1>Blog</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <main class="animate__animated animate__fadeInUp">
+    <article class="animate__animated animate__fadeInLeft">
+      <img class="article-img animate__animated animate__zoomIn" src="Imagenes/Sinfonia.jpg" alt="Imagen del artículo 1">
+      <h2><a href="https://blogs.elespectador.com/actualidad/la-sinfonia-del-pedal/la-chinarello-una-bicicleta-legendaria/" target="_blank">La Chinarello, una bicicleta legendaria</a></h2>
+      <address>Por César Augusto Penagos Collazos</address>
+      <time datetime="2025-05-20">20 de mayo de 2025</time>
+      <p>Durante 10 años puedo decir que he recorrido más o…</p>
+      <footer>
+        <p><em>La Sinfonía del Pedal</em></p>
+      </footer>
+    </article>
+
+    <article class="animate__animated animate__fadeInRight">
+      <img class="article-img animate__animated animate__zoomIn" src="Imagenes/Sevillano.jpeg" alt="Imagen del artículo 2">
+      <h2><a href="https://blogs.elespectador.com/oscar-sevillano/a-quien-le-conviene-que-se-hunda-el-preacuerdo-con-olmedo-lopez/" target="_blank">¿A quién le conviene que se hunda el preacuerdo con Olmedo López?</a></h2>
+      <address>Por Sevillano</address>
+      <time datetime="2025-05-19">19 de mayo de 2025</time>
+      <p>He seguido muy juiciosamente lo que tiene que ver con el preacuerdo...</p>
+      <footer>
+        <p>Columna de análisis de Óscar Sevillano.</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2025 Velez. Todos los derechos reservados.</p>
+  </footer>
+  <script src="progress-bar.js"></script>
+</body>
+</html>
