@@ -328,35 +328,63 @@ button:hover {
 
 /* Móviles: ancho máximo 480px */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2rem;
+  body {
+    font-size: 0.95rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .galeria {
-    grid-template-columns: 1fr; /* 1 por fila */
-  }
-
-  .productos-container {
+  header {
     padding: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
   }
 
   .producto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .producto img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  section.sobre-mi {
+    flex-direction: column;
+    text-align: center;
     padding: 1em 0.5em;
   }
 
-  nav a {
-    padding: 0.5em 1em;
-    font-size: 1rem;
+  section.sobre-mi img {
+    max-width: 90%;
   }
 
-  form {
-    padding: 1em;
+  .terminal-window {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.6em 1em;
+    font-size: 0.95rem;
+  }
+
+  .contenido-producto {
+    width: 100%;
   }
 }
+
 
 .article-img {
   float: left;
