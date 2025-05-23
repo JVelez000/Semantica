@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #b2fab4, #d1b2f9); /* Verde claro a violeta claro */
+  background: linear-gradient(to bottom right, #b2fab4, #d1b2f9);
   color: #222;
   line-height: 1.6;
 }
@@ -487,7 +487,6 @@ article::after {
 .yellow { background: #ffbd2e; }
 .green { background: #27c93f; }
 
-/* Ajustar Prism pre para encajar en terminal */
 pre[class*="language-"] {
   background: none !important;
   padding: 0 !important;
