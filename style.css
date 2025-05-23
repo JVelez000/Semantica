@@ -460,3 +460,40 @@ article::after {
   display: block;
   clear: both;
 }
+
+
+.terminal-window {
+  background: #2d2d2d;
+  border-radius: 12px;
+  padding: 1em;
+  margin: 1.5em 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  max-width: 700px;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+.terminal-header {
+  display: flex;
+  gap: 0.5em;
+  padding-bottom: 0.8em;
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+/* Ajustar Prism pre para encajar en terminal */
+pre[class*="language-"] {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  font-family: 'Fira Code', monospace, monospace;
+  font-size: 1rem;
+  color: #ccc;
+}
